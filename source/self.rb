@@ -1,23 +1,31 @@
-
 ## CLASS CONTEXT
-
 class Person
   def self.example_class_method
-    puts "We're calling an example class method"
-    puts "'self' is always defined.  What is 'self' here?  Let's see."
-    p self
-    puts "That was self!"
+    #We're calling an example class method
+    return "Hello from a class method!"
   end
+
+  def self.what_is_self?
+    #Here's a class method that prints `self`
+    #'self' is always defined.  What is 'self' here?  Let's see.
+    return self
+  end
+
 
   def example_instance_method
-    puts "We're calling an example *instance* method"
-    puts "'self' is defined here, too, but it means something different."
-    p self
-    puts "That was self, again, but see how it's an instance of the class."
+    #We're calling an example _instance_ method now.
+    return "Hello from an instance method!"
+  end
+
+  def what_is_self?
+    #'self' is defined here, too, but it means something different.
+    #Since we're calling an example *instance* method,
+    # `self` is an instance of the class this time.
+
+    #Here's self again
+    return self
   end
 end
-
-## Write your driver code to run both methods above here:
 
 ## MODULE CONTEXT
 ## The following are identical.  Comment each out separately and write the driver code to run the hypot method

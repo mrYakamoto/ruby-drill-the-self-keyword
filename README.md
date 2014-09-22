@@ -45,7 +45,7 @@ end
 
 We've defined two methods, here: a class method and an instance method.  `self` references something different depending on the context.  In the class method context, `self` refers to the class itself.  In the instance method context, `self` refers to the particular instance of the class.
 
-Load `self.rb` up in IRB. Run `irb -r self.rb` from the `source` directory.
+Load `self.rb` up in IRB. Run `irb` from the `source` directory, then `load "self.rb"`.
 
 Play around with the methods. How do you call them? What does each return? Why?
 

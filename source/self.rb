@@ -30,14 +30,36 @@ end
 ## MODULE CONTEXT
 ## The following are identical.  Comment each out separately and write the driver code to run the hypot method
 
+# module Math
+#   def self.hypot(a, b)
+#     return Math.sqrt(a*a + b*b)
+#   end
+# end
+
 module Math
-  def self.hypot(a, b)
-  # maths in here
+  def Math.hypot(a, b)
+    return Math.sqrt(a*a + b*b)
   end
 end
 
-# module Math
-#   def Math.hypot(a, b)
-#     # maths in here
-#   end
-# end
+=begin
+Dear Grandma,
+
+In computers there are things and types of things. For example, you are an instance of
+Grandma, "Nil & Gregg's Grandma." Grandma is a identifier for many grandmas, but you
+are one specific grandma.
+
+xoxo,
+Gregg & Nil
+=end
+
+
+
+
+
+
+
+
+
+
+
